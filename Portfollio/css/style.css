@@ -1,0 +1,486 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #fff 60%, #c7c6c6 60%);
+}
+.hero .sticky {
+  background: #fff;
+  box-shadow: 10px 10px 300px #171717;
+}
+.hero header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+  z-index: 50;
+}
+.hero header .conteiner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.hero header .conteiner .header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.hero header .conteiner .header__nav .logo {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #171717;
+}
+.hero header .conteiner .header__nav .menu {
+  display: flex;
+}
+.hero header .conteiner .header__nav .menu li {
+  margin-right: 40px;
+}
+.hero header .conteiner .header__nav .menu li:last-child {
+  margin-right: 0;
+}
+.hero header .conteiner .header__nav .menu li a {
+  color: #171717;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  letter-spacing: 1px;
+}
+.hero header .conteiner .header__nav .menu li a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: #171717;
+  width: 100%;
+  height: 2px;
+  transition: 0.6s;
+  position: absolute;
+  top: 30px;
+  transform: scale(0);
+}
+.hero header .conteiner .header__nav .menu li a:hover::after {
+  transform: scale(1);
+  transition: 0.6s;
+}
+.hero header .conteiner .header__nav .burger__btn {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #171717;
+  position: relative;
+  display: none;
+}
+.hero header .conteiner .header__nav .burger__btn .burger {
+  position: relative;
+  left: 22%;
+}
+.hero header .conteiner .header__nav .burger__btn .burger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #171717;
+  transition: 0.4s;
+  position: absolute;
+}
+.hero header .conteiner .header__nav .burger__btn .burger span:first-child {
+  top: 10px;
+}
+.hero header .conteiner .header__nav .burger__btn .burger span:last-child {
+  top: -10px;
+}
+.hero .conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero .conteiner .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .conteiner .content img {
+  height: 700px;
+  position: absolute;
+  top: 29px;
+  left: 47%;
+}
+.hero .conteiner .content .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 200px;
+}
+.hero .conteiner .content .intro p {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+.hero .conteiner .content .intro h1 {
+  text-transform: uppercase;
+  color: #171717;
+  font-weight: 700;
+  font-size: 50px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+.hero .conteiner .content .intro .btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero .conteiner .content .intro .btns .btn {
+  color: #171717;
+  background: transparent;
+  border: 2px solid #171717;
+  border-radius: 3px;
+  padding: 18px 36px;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  transition: 0.4s;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0px 0 0 #171717;
+}
+.hero .conteiner .content .intro .btns .btn:hover {
+  transition: 0.4s;
+  color: #fff;
+  box-shadow: inset 0 55px 0 0 #171717;
+}
+.hero .conteiner .content .intro .icons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.hero .conteiner .content .intro .icons a i {
+  color: #fff;
+  font-size: 30px;
+  background: #171717;
+  border: 2px solid #171717;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.hero .conteiner .content .intro .icons a i:hover {
+  color: #171717;
+  background: #fff;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+}
+.about .conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about .conteiner .content {
+  padding-top: 200px;
+}
+.about .conteiner .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.about .conteiner .content .main__content {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.about .conteiner .content .main__content img {
+  height: 700px;
+}
+.about .conteiner .content .main__content p {
+  color: #171717;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.about .conteiner .content .main__content a {
+  line-height: 120px;
+  color: #171717;
+  background: transparent;
+  border: 2px solid #171717;
+  border-radius: 3px;
+  padding: 18px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  transition: 0.4s;
+  letter-spacing: 1px;
+  box-shadow: inset 0 0px 0 0 #171717;
+}
+.about .conteiner .content .main__content a:hover {
+  transition: 0.4s;
+  color: #fff;
+  box-shadow: inset 0 55px 0 0 #171717;
+}
+
+.works {
+  height: 100%;
+  width: 100%;
+}
+.works .conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.works .conteiner .content {
+  padding-top: 200px;
+}
+.works .conteiner .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+.works .conteiner .content .main__content {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+.works .conteiner .content .main__content .card p {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.works .conteiner .content .main__content .four__card {
+  position: relative;
+  bottom: 200px;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  padding: 100px 0px;
+}
+footer .conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .conteiner .content .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+}
+footer .conteiner .content .wrapper {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .conteiner .content .wrapper .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .conteiner .content .wrapper .intro .logo {
+  color: #171717;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+footer .conteiner .content .wrapper .intro p {
+  color: #171717;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+footer .conteiner .content .wrapper .intro .icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+footer .conteiner .content .wrapper .intro .icons a i {
+  color: #fff;
+  background: #171717;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 26px;
+  transition: 0.4s;
+}
+footer .conteiner .content .wrapper .intro .icons a i:hover {
+  transform: translateY(10px);
+}
+footer .conteiner .content .wrapper .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .conteiner .content .wrapper .menu li a {
+  color: #171717;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+}
+footer .conteiner .content .wrapper .menu li a::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  background: #171717;
+  width: 100%;
+  height: 2px;
+  transition: 0.4s;
+  position: absolute;
+  transform: scale(0);
+  top: 30px;
+}
+footer .conteiner .content .wrapper .menu li a:hover::after {
+  transition: 0.4s;
+  transform: scale(1);
+}
+footer .conteiner .content .wrapper form p {
+  color: #171717;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+footer .conteiner .content .wrapper form .form__content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+footer .conteiner .content .wrapper form .form__content input {
+  height: 40px;
+  width: 300px;
+  border: 2px solid #c7c6c6;
+  padding: 0px 10px;
+}
+footer .conteiner .content .wrapper form .form__content button {
+  padding: 10px;
+  background: #171717;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 120vh;
+  }
+  .hero header {
+    width: 100%;
+    height: 80px;
+  }
+  .hero header .conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero header .conteiner .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero header .conteiner .header__nav .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 40% 0 100% 50%;
+    top: 80px;
+    background: #f8f8f8;
+    transform: translateX(-100%);
+    transition: 0.4s;
+  }
+  .hero header .conteiner .header__nav .menu li a {
+    color: #171717;
+  }
+  .hero header .conteiner .header__nav .menu.active {
+    transform: translate(0);
+    transition: 0.4s;
+  }
+  .hero header .conteiner .header__nav .burger__btn {
+    display: block;
+  }
+  .hero header .conteiner .header__nav .burger__btn.active .burger span {
+    transform: scale(0);
+  }
+  .hero header .conteiner .header__nav .burger__btn.active .burger span:first-child {
+    transform: rotate(45deg);
+    top: 1px;
+  }
+  .hero header .conteiner .header__nav .burger__btn.active .burger span:last-child {
+    transform: rotate(-45deg);
+    top: 1px;
+  }
+  .hero .conteiner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .hero .conteiner .content img {
+    position: absolute;
+    top: 61.5%;
+    left: 15%;
+    height: 600px;
+  }
+  .about .conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .about .conteiner .content .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .conteiner .content .main__content .about__intro .btn {
+    position: relative;
+    left: 35%;
+  }
+  .works .conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .works .conteiner .main__content .four__card {
+    position: absolute;
+    top: -100px;
+  }
+  footer {
+    height: 80vh;
+  }
+  footer .conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  footer .conteiner .content {
+    position: relative;
+  }
+  footer .conteiner .content .wrapper {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .conteiner .content .wrapper .menu {
+    margin-top: 170px;
+    position: absolute;
+    left: 0;
+  }
+  footer .conteiner .content .wrapper .form {
+    position: absolute;
+    top: 280%;
+    left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
